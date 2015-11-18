@@ -1,0 +1,19 @@
+{
+  "name": "wmb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikeWasHere/sms-WMB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MikeWasHere/sms-WMB/issues"
+  },
+  "homepage": "https://github.com/MikeWasHere/sms-WMB#readme"
+}
