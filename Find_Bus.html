@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Wheres My Bus</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Alegreya:400,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+
+    <!------------------ Google maps code ------------------>
+    <style>
+        #map_canvas {
+            width: 500px;
+            height: 400px;
+        }
+        body{
+            background-color: #0071bc;
+        }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        function initialize() {
+            var map_canvas = document.getElementById('map_canvas');
+            var map_options = {
+                center: new google.maps.LatLng(44.5403, -78.5463),
+                zoom: 8,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(map_canvas, map_options)
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    <!------------------ Google maps code End ------------------>
+
+
+</head>
+
+<body id="2nd">
+<header>
+
+    <nav>
+        <img src="images/page-logo.png" id="logo" width="" height="">
+    </nav>
+
+    <!--<button name="Register" id="Register-btn">Register</button>-->
+
+    <div class="container login">
+        <nav id="login">
+            <button id="lib"><p>login</p></button>
+            <div id="login-form">
+                <img id="triangle" src="images/Wheres%20my%20bus-login-triangle-08.png">
+                <form>
+                    <input name="signinButton" type="text" id="user" class="masterTooltip" placeholder="Username" title="Please enter a username" required />
+
+                    <input name="signinButton" type="password" id="pass" class="masterTooltip" placeholder="Password" title="Please enter a password" required />
+
+                    <button name="signinButton" type="submit" id="signinButton" value="Sign In">Login</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<div id="Destination">
+    <h1>Destination</h1>
+    <form id="2ndForm">
+        <input name="signinButton" type="text" class="masterTooltip AB" placeholder="Please enter where you are departing from" title="departing from" required />
+
+        <input name="signinButton" type="text" class="masterTooltip AB" placeholder="Please enter where your going" title= "where your going" required />
+     <label class="where">
+        <input type="radio" name="Leaving" class="where">Depart at
+     </label>
+
+     <label class="where">
+        <input type="radio" name="Arriving" class="where">Arrive by
+     </label>
+
+    <label class="where">Choose the day
+        <input class="yas" type="date" name="Date">
+    </label>
+
+    <label class="where">Choose the time
+        <input class="yas" type="time">
+    </label>
+
+        <button name="signinButton" type="submit" id="getBus" value="Sign In">Find it</button>
+    </form>
+
+</div>
+
+
+<body>
+
+
+<!--  Map Placeholder -->
+<div id="map">
+	
+</div>
+
+<!-- Longitude and Latitude -->
+
+<div id="lat"></div>
+
+<div id="long"></div>
+
+</div>
+
+
+
+</body>
+
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</html>

@@ -1,0 +1,41 @@
+body{
+  background: url("../background-18.png") no-repeat fixed;
+  max-width: 100%;
+}
+
+nav{
+  position: absolute;
+  top: 40%;
+}
+
+nav a{
+  margin: 0 15px;
+  color: #FFFF00;
+  padding: 20px 10px;
+  font-family: 'Century Gothic' roboto;
+  font-size: 20px;
+}
+
+nav a:hover{
+  background-color: #FFFF00;
+  color: #212121;
+}
+
+#logo{
+  position: absolute;
+  right: 20%;
+  top: 7%;
+}
+
+#move-right{
+  position: absolute;
+  right: 10%;
+  top: 1%;
+}
+
+#circle{
+  position: absolute;
+  z-index: 1;
+  top: 7%;
+  left: 29%;
+}
